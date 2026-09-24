@@ -1,0 +1,12 @@
+Cómo levantar
+1.cp .env.template como .env
+2.nom i
+3.npm run start:dev
+
+Se utiliza el puerto 3000
+http://localhost:3000/payments
+
+http://localhost:3000/payments/create-payment-session -->(POST)crea la sesión de pago y devuelve el id y el url
+
+http://localhost:3000/payments/webhook -->(POST)recibe el evento de Stripe, devuelve el id y mensajes según los eventos
+
